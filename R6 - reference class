@@ -1,0 +1,15 @@
+# Notes 
+# - Using Hadley's guide on R6 --> https://adv-r.hadley.nz/r6.html
+# - R6 not part of base R, must import using library(R6)
+
+
+#
+# 1 - skeleton
+#
+My_API_Wrapper <- R6Class(
+  classname = 'my_api_wrapper',
+  private = list(), # place put private attributes and methods
+  public = list(),  # place to put initialize, finalize, public attributes, public methods
+  active = list(),  # input args checker
+  inherit = NULL  # parent R6 object to inherit from (if applicable)
+)
