@@ -1,0 +1,16 @@
+## Notes
+- HTTP URLs
+  - https://www.domain.com:1234/path/to/resource?a=b&x=y
+  - [protocol][host][port][resource path][query string]
+- In python "requests" package,
+  - params is or GET-style URL parameters
+  - data is for POST-style body information
+  
+
+## References
+- General HTTP requests, https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
+- General R API tutorial using httr, https://www.dataquest.io/blog/r-api-tutorial/
+- Wrapping APIs w/ httr2 guide, https://cran.r-project.org/web/packages/httr2/vignettes/wrapping-apis.html
+  - httr2 is not install-able in the plate-stats-report ENV....so we will use httr
+  
+  
