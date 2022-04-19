@@ -24,13 +24,19 @@ use_package("httr2", "Imports")
 usethis::use_apache_license(version = 2)
 
 # Create tutorial
-# usethis::use_tutorial("tutorial_slims_access_tables", "Tutorial - How to Access Tables in SLIMS")
+usethis::use_tutorial("slims_access_tables", "Access Tables in SLIMS Tutorial")
 
-# References - How to export class
-# https://cran.r-project.org/web/packages/roxygen2/vignettes/namespace.html
-# https://r-pkgs.org/namespace.html
+# How to export classes
+  # References 
+    # https://cran.r-project.org/web/packages/roxygen2/vignettes/namespace.html
+    # https://r-pkgs.org/namespace.html
+  # Steps
+    #1. Add export headers
+    #2. Restart R
+    #3. Run roxygen2::roxygenize()
+roxygen2::roxygenize()
 
-# Review package using sitrep
+# Review project or git settings using sitrep
 # proj_sitrep()
 # git_sitrep()
 
