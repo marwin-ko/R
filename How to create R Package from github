@@ -16,7 +16,9 @@ usethis::use_test('myRcode')
 # Put test into /repos/quickbaseR//tests/teststhat/myRcode.R
 
 # Add package dependency to DESCRIPTION file
-use_package("tidyverse", "Imports")
+use_package("R6", "Imports")
+use_package("glue", "Imports")
+use_package("httr2", "Imports")
 
 # Add license (make sure it matches license on github repo)
 usethis::use_apache_license(version = 2)
