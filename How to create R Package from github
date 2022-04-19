@@ -1,0 +1,36 @@
+1. Create a git repo.
+  - select apache 2.0 license
+2. Git clone repo to local machine.
+3. cd to git repo.
+4. Do the following:
+
+# Creates package format
+path <- "~/myRpackage"
+usethis::create_package(path)
+
+# Create place for code and respective tests
+usethis::use_r('myRcode')
+usethis::use_test('myRcode')
+
+# Put code into /repos/quickbaseR/R/myRcode.R
+# Put test into /repos/quickbaseR//tests/teststhat/myRcode.R
+
+# Add package dependency to DESCRIPTION file
+use_package("tidyverse", "Imports")
+
+# Add license (make sure it matches license on github repo)
+usethis::use_apache_license(version = 2)
+
+# Create tutorial
+# usethis::use_tutorial("tutorial_slims_access_tables", "Tutorial - How to Access Tables in SLIMS")
+
+# References - How to export class
+# https://cran.r-project.org/web/packages/roxygen2/vignettes/namespace.html
+# https://r-pkgs.org/namespace.html
+
+# Review package using sitrep
+# proj_sitrep()
+# git_sitrep()
+
+# Run this to tidy DESCRIPTION file (do this at the end!)
+usethis::use_tidy_description()
