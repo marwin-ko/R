@@ -10,7 +10,7 @@ usethis::create_package(path)
 
 # Create place for code and respective tests
 usethis::use_r('myRcode')
-usethis::use_testthat('myRcode')
+usethis::use_test('myRcode')
 
 # Put code into /repos/quickbaseR/R/myRcode.R
 # Put test into /repos/quickbaseR//tests/teststhat/myRcode.R
